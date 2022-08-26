@@ -87,6 +87,8 @@ namespace TP1_Ex.Assincronismo
             lblStatus.Text = "Cálculo realizado com sucesso!";
             lblStatus.ForeColor = Color.Green;
             btnCalcular.Enabled = true;
+            lblResultado.Visible = true;
+            lstBoxResultado.Visible = true; 
             lblTempo.Visible = true;
 
             lstBoxResultado.Items.Add($"FOLHA DE PAGAMENTO : {FolhaDePagamento}");

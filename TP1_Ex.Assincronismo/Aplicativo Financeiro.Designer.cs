@@ -34,7 +34,7 @@
             this.lblValor = new System.Windows.Forms.Label();
             this.txtRecebeValor = new System.Windows.Forms.TextBox();
             this.lblTempo = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCalcular
@@ -69,6 +69,7 @@
             this.lstBoxResultado.Name = "lstBoxResultado";
             this.lstBoxResultado.Size = new System.Drawing.Size(355, 144);
             this.lstBoxResultado.TabIndex = 10;
+            this.lstBoxResultado.Visible = false;
             // 
             // lblValor
             // 
@@ -77,9 +78,9 @@
             this.lblValor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblValor.Location = new System.Drawing.Point(78, 38);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(210, 28);
+            this.lblValor.Size = new System.Drawing.Size(215, 28);
             this.lblValor.TabIndex = 11;
-            this.lblValor.Text = "Digite o valor inicial :   ";
+            this.lblValor.Text = "Digite o valor inicial  :   ";
             // 
             // txtRecebeValor
             // 
@@ -100,21 +101,22 @@
             this.lblTempo.Text = "Tempo de duração do processo";
             this.lblTempo.Visible = false;
             // 
-            // label1
+            // lblResultado
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(78, 232);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Resultado :";
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Location = new System.Drawing.Point(78, 232);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(82, 20);
+            this.lblResultado.TabIndex = 14;
+            this.lblResultado.Text = "Resultado :";
+            this.lblResultado.Visible = false;
             // 
             // Aplicativo_Financeiro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1111, 543);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.lblTempo);
             this.Controls.Add(this.txtRecebeValor);
             this.Controls.Add(this.lblValor);
@@ -137,6 +139,6 @@
         private Label lblValor;
         private TextBox txtRecebeValor;
         private Label lblTempo;
-        private Label label1;
+        private Label lblResultado;
     }
 }
